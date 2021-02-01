@@ -1,0 +1,55 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\graphicspath{ {img/} }
+
+\title{SLAM PERFORMANCE WITH AN RGB-D SENSOR}
+\author{Marvin M. Vargas Flores}
+\date{January 2021}
+
+\begin{document}
+	
+	\maketitle
+	
+	%use \includegraphics{imagefile} to add an image.
+	%use \begin{figure} to add an image with caption and format.
+	
+	%use \begin{itemize} to create a bullet list.
+	%use \begin{enumerate} to create a numbered list.
+	
+	%To add equations inside text, put the equation between money signs
+	% $ E = MC^2 $ you can also use \begin{math} and \end{math}
+	
+	%To add math in display mode (outside text) use \begin{displaymath} or
+	% \begin{equation} 
+	
+	\begin{abstract}
+		SLAM, simultaneous localization and mapping, is the most commonly used exploration technique for autonomous mobile robots. It allows the machine to know in real time where it is located, making it possible to generate routes in order to accomplish the assigned tasks in an optimal time. The present article will talk about the performance of an RGB-D sensor  applied in SLAM. This technique is almost always used with a LiDar sensor, the which returns a cloud of points that are used to create a digital 3D image of the environment around the machine, but this technology is still too expensive. 
+		\\
+		\\
+		 \textbf{Keywords} - SLAM, RGB-D, Mobile robotics.
+
+		
+	\end{abstract}
+	
+	\section{Introduction}
+		SLAM is a technique employed by autonomous vehicles and robots to build a map of an unknown environment they are exploring while at the same time calculating a route to reach the place they are headed to.
+		The development of this technique is divided in two main problems.
+		
+		 The first is organization of information provided by the sensors in such a way that it can be comprehended and provides useful information for accomplishing the proposed task. This problems starts to get hard once the machine finds itself in a random dynamic environment where it has to interact with other static or moving objects. 
+		 
+		 The second problem is the limited computational capacity. It is important for this technique to work in real time in order for the vehicle or robot to react correctly to its environment while moving. This is hard to achieve as most algorithms run in the embedded computer onboard of the machines, which must be encased in a small space and work with limited energy most of the times. 
+		 
+		 The lack of a perfect sensor or model that describes all the objects in the environment has turned state of the art solutions for this problem to probabilistic techniques. The most popular is Bayesian SLAM, which is based in Bayes theorem which relates the marginal and conditional probabilities of two random variables.
+		\\
+		\\
+		For sensor comparing, a mobile robot will be used. This machine will travel through an indoors environment equipped with one of the two sensors each time. Its task during the exploration will be to generate a digital map from the information delivered by the sensor it has in that run. 
+		
+		\subsection{Current state}	
+			
+			
+	
+	
+	
+\end{document}
